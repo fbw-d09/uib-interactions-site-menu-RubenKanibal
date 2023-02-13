@@ -1,0 +1,78 @@
+* {
+    font-family: 'Lobster', cursive;
+    margin: 0;
+    padding: 0;
+    transition: 1s;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background-color: aliceblue;
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.119) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.295) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+a {
+/*     border: 1px solid black;
+    box-sizing: border-box; */
+    font-size: 1.5em;
+    padding: 0.5em 0.5em 0.5em 1em;
+    color: black;
+    text-decoration: none;
+    z-index: 1000;
+}
+
+.box {
+    height: 25%;
+    width: 3%;
+}
+
+.home {
+    background-color: #5366c3;
+    position: absolute;
+    top: 0;
+}
+
+.about {
+    background-color: #3f83c0;
+    position: absolute;
+    top: 25%;
+}
+
+.work {
+    background-color: #2aa1bd;
+    position: absolute;
+    bottom: 25%;
+}
+
+.contact {
+    background-color: #15bfbb;
+    position: absolute;
+    bottom: 0;
+}
+
+.one:hover ~ .home {
+    width: 100%;
+}
+
+.two:hover ~ .about {
+    width: 100%;
+}
+
+.three:hover ~ .work {
+    width: 100%;
+}
+
+.four:hover ~ .contact {
+    width: 100%;
+}
